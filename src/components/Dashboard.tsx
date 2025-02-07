@@ -31,11 +31,11 @@ export const Dashboard = () => {
   ]);
 
   return (
-    <div className="p-6 space-y-8 animate-fadeIn">
+    <div className="p-6 space-y-8 animate-fadeIn bg-gradient-to-b from-designer-bg to-black/90 min-h-screen">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-semibold text-designer-text">Projects</h1>
+        <h1 className="text-3xl font-semibold text-white">Projects</h1>
         <div className="flex gap-4">
-          <Button variant="outline" className="gap-2">
+          <Button variant="outline" className="gap-2 neo-blur hover:bg-white/10">
             <Filter className="w-4 h-4" /> Filter
           </Button>
           <Button className="gap-2 bg-designer-accent hover:bg-mint-dark">

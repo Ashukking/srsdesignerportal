@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,17 +52,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        mint: {
-          light: "#E0F5F1",
-          DEFAULT: "#4AC1A8",
-          dark: "#38927F",
-        },
         designer: {
-          bg: "#F8FAFC",
-          card: "#FFFFFF",
+          bg: "#1A1F2C",
+          card: "#222222",
           accent: "#4AC1A8",
-          text: "#1E293B",
-          muted: "#64748B",
+          text: "#FFFFFF",
+          muted: "#C8C8C9",
         },
       },
       borderRadius: {

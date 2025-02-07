@@ -28,7 +28,7 @@ export const LoginForm = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="h-12 bg-white/50 backdrop-blur-sm border-gray-200"
+          className="h-12 glass-morphism text-white placeholder:text-gray-400"
           required
         />
       </div>
@@ -38,7 +38,7 @@ export const LoginForm = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="h-12 bg-white/50 backdrop-blur-sm border-gray-200"
+          className="h-12 glass-morphism text-white placeholder:text-gray-400"
           required
         />
       </div>
