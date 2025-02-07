@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { LoginForm } from "@/components/LoginForm";
+import { Dashboard } from "@/components/Dashboard";
+import { useState } from "react";
 
 const Index = () => {
+  const [isAuthenticated] = useState(false);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-designer-bg">
+      {!isAuthenticated ? (
+        <div className="min-h-screen flex flex-col items-center justify-center p-6">
+          <div className="w-full max-w-md space-y-8 text-center">
+            <div className="space-y-2">
+              <h1 className="text-4xl font-bold tracking-tight text-designer-text">
+                Designer Portal
+              </h1>
+              <p className="text-designer-muted">
+                Sign in to manage your design projects
+              </p>
+            </div>
+            <LoginForm />
+          </div>
+        </div>
+      ) : (
+        <Dashboard />
+      )}
     </div>
   );
 };
